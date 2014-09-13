@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Customers" verbose="1" parallel="tests" thread-count="1">
+
+	<test name="validateUniversityFormData" preserve-order="true">
+		<classes>
+			<class name="com.generic.validateorders.ApplicationTest">
+				<methods>
+					<include name="enterLoginData" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
